@@ -73,7 +73,7 @@
     <p>This is <sub>subscript</sub> text</p>
     <p>This is <sep>superscript</sep> text</p>
     <p>This is <tt>monospaced</tt> text</p>
-    <p>This is <mark>highlighted</mark>> text</p>
+    <p>This is <mark>highlighted</mark> text</p>
     <br><br>
 
     <!-- <span> is an inline grouping container for elements and styling-->
@@ -100,5 +100,86 @@
         laboriosam, soluta qui aut repellat fugit illo dolor facere, 
         libero, hic perferendis!
     </div></p>
+
+    <!-- This is an unordered list, bullet points-->
+    <h4>This is a list!</h4>
+    <ul>
+        <li>First item</li>
+        <li>Another item</li>
+        <li>Enough item</li>
+        <li>Coffee Suplies</li>
+        <!-- This is a nested list -->
+        <ul>
+            <li>Coffee beans</li>
+            <li>Espresso</li>
+        </ul>
+    </ul>
+
+    <!-- Ordered list, like 1, 2, 3, ... -->
+    <h4>This is an ordered list:</h4>
+    <ol>
+        <li>Eat breakfast</li>
+        <li>Go to work</li>
+        <li>Go to the gym</li>
+        <li>Sleep</li>
+    </ol>
+
+    <!-- Description list, word and def-->
+    <h4>Description list: </h4>
+    <!-- This stlye is some inline css, makes a border with pink fill in-->
+    <dl style="background-color: lightpink; border: 2px solid;">
+        <dt>soldier</dt>
+            <dd>A soldier is in the army which is cool</dd>
+        <dt>airmen</dt>
+            <dd>Airmen like to fly a desk or a cool plane</dd>
+        <dt>marine</dt>
+            <dd>These guys rock and go ham</dd>
+    </dl>
+
+    <!-- A table, notice some of the inline css -->
+    <h3>Store Hours</h3>
+    <table border="0.5" style="background-color: black;">
+        <!-- This is the first row (table headers), th are the column titles-->
+        <tr align="center" style="background-color: lightblue;">
+            <th width="100">Sunday</th>
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thursday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+        </tr>
+
+        <!-- This is another row -->
+        <tr align="center" style="background-color: aliceblue;">
+            <td>Closed</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>10-2</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- Buttons, lots on inline css and it's wrapped in an anchor href -->
+    <!-- The button on click will execute the Java Script function we made-->
+    
+    <button onclick="doSomething()" style="font-size: 25px; background-color: black; 
+    color: white; border-radius: 5px; border-color: lightgreen;">
+        <a href="https://www.chewy.com/" target="_blank">
+            Click Me!
+        </a>
+    </button>
+
+    <p id="onScreenText">Text: {}</p>
+
+    <!-- JS function for when the buttons pressed-->
+    <script>
+        function doSomething(){
+            document.getElementById("onScreenText").innerHTML = "You clicked the button YAY!!!"
+        }
+    </script>
 </body>
 </html>

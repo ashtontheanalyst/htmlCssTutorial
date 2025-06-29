@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Form</title>
+</head>
+<body>
+    <!-- action sends the file to that file-->
+    <!-- POST is for sensitive data, GET is for insensitive-->
+    <form action="index.php" method="POST">
+        <h2>Example Form</h2>
+
+        <label>Username: </label>
+        <input type="text" id="username" minlength="4" maxlength="15" 
+        placeholder="4-15 chars" required>
+        <br>
+
+        <label>Password: </label>
+        <input type="password" id="password" minlength="4" maxlength="15" 
+        required>
+        <br>
+
+        <label>Email: </label>
+        <input type="email" id="email" placeholder="joeshmo@fake.com">
+        <br>
+
+        <label>Phone: </label>
+        <input type="tel" id="phone" placeholder="xxx-xxx-xxxx"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <!-- Notice how we have a format for the phone number input,
+        it has to be 3 #'s 0-9 twice, then a set of four, dashes inbetween-->
+        <br>
+
+        <label>Birth Day:</label>
+        <input type="date" id="bday">
+        <br><br>
+
+        <input type="reset"><br>
+        <input type="submit">
+
+    </form>
+</body>
+</html>
