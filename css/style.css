@@ -1,0 +1,80 @@
+/*Importing a ttf file, font
+you can make the font-family title to be whatever you like*/
+@font-face {
+    font-family: Manufacturing-Consent;
+    src: url("../fonts/ManufacturingConsent-Regular.ttf");
+}
+
+body{
+    /*This is an ex of using a 'named color'*/
+    background-color: black;
+}
+
+h1{
+    color: white;
+    /*Playing with fonts, if the first font doesn't work it goes to the next*/
+    font-family: verdana, arial;
+    /*Making a border around the element, lots of styles*/
+    /*
+    border-style:dashed;
+    border-width: 2px;
+    border-color: aqua;
+    */
+    border: 2px dashed aqua;
+    border-radius: 10px;
+}
+
+/*Giving the text 2 shadows, (px to the right, px down, blur, color)*/
+h2{
+    font-size: 40px;
+    text-shadow: 4px 4px 5px red, -4px -4px 5px lightblue;
+    text-shadow: #64a6cf;
+}
+
+/*Giving the div box a shadow too, (px r, px d, blyr, color)*/
+#box1{
+    width: 600px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 5px 5px 5px grey;
+
+}
+
+p{
+    /*Using HSL*/
+    color: hsl(98, 70%, 64%);
+    border-bottom: 1px solid white;
+}
+
+/*This is a comment,
+The # represents a specifically ID'd item in the html file, custom tag to beautify*/
+#p2{
+    /*Using RGB*/
+    color: rgb(245, 66, 233);
+    /*This is our imported ttf font*/
+    font-family: Manufacturing-Consent;
+    font-size: 20px;
+}
+
+#p3{
+    /*Using HEX*/
+    color: #64a6cf;
+}
+
+#p4{
+    /*Importing our google font API*/
+    font-family: "Dancing Script";
+    font-size: 30px;
+    color: lightgrey;
+}
+
+/*The . is for classes or groupings of objects in the html file*/
+.even{
+    font-style: italic;
+    /*Default size is 16px, 1em is the normal size 2 is double, 2.5 etc.*/
+    font-size: 30px;
+}
+.odd{
+    font-weight: bold;
+    font-size: 0.7em;
+}

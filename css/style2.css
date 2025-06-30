@@ -1,0 +1,90 @@
+body{
+    margin: 1px; /*This paxes it 1px of margin on the outside of this object*/
+}
+
+#overflow{
+    border: 2px dashed black;
+    height: 75px;
+    /*By def. the overflow is visible, meaning we can see things fall out of
+    the box/div/etc. so we can change that! "hidden" contains only the size
+    of the box and "scroll" gives us a scroll bar, "auto" only puts a scroll
+    bar when needed*/
+    overflow: auto;
+}
+
+#surround{
+    border: 2px solid black;
+    /*This makes sure objects in the box don't flow out of it*/
+    display: flow-root;
+}
+
+#logo1{
+    height: 200px;
+    /*Float is what allows things to wrap around the object, left or right for where to put the object*/
+    float: right;
+    margin: 10px;
+}
+
+#logo2{
+    height: 150px;
+    float: left;
+    margin: 10px;
+}
+
+/*This is for any object defined under the class "box" that we made in the html*/
+.box{
+    border: 3px solid black;
+    font-size: 3em; /*This is like saying 300%*/
+    width: 200px;
+    height: 200px;
+    text-align: center;
+
+    /*Every box will have a minimum of 10px of margin*/
+    margin: 10px;
+}
+
+#box1{
+    background-color: pink;
+    /*Now we add on*/
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+#box2{
+    background-color: lightblue;
+    margin-top: 100px;
+    /*This makes the box stick to the right side wall, take up all the margin to the left*/
+    margin-left: auto;
+}
+
+#box3{
+    background-color: peachpuff;
+    margin: auto; /*Keeps it in the middle no matter what*/
+}
+
+/*Display lets us change how objects work, like turning a span into a block element
+It also lets us put things together or by eachother*/
+#div2{
+    background-color: lightsteelblue;
+    border: 2px dashed black;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+}
+/*Changed this span to act like a block element*/
+#span2{
+    background-color: lightcoral;
+    border: 2px dashed black;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+}
+/*This span is acting like an inline-block and it's invisible!*/
+#span3{
+    background-color: plum;
+    border: 2px dashed black;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    visibility:hidden;
+}
